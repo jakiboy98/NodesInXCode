@@ -53,7 +53,7 @@ void HashTable<Type> : add(const Type& value)
         }
     }
 }
-
+//bnvbnvbnvbnvbnvnbvnbvnb
 template <class Type>
 void HashTable<Type> :: updateSize()
 {
