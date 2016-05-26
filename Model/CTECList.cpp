@@ -12,8 +12,6 @@ using namespace std;
 template <class Type>
 CTECList<Type>::CTECList()
 {
-
-
 	ArrayNode<Type> current = head;
 
 	for (int deleteCount = 0; deleteCount < size; deleteCount++)
@@ -248,6 +246,29 @@ template <class Type>
 Type CTECList<Type>::set(int index)
 {
 
+}
+
+template <class Type>
+int CTECList<Type> :: indexOf(Type searchValue)
+{
+    assert(this->size > 0)
+    int index = -1;
+    ArrayNode<Type> * searchPointer = head;
+    if (searchPointer->getValue() == searchValue)
+    {
+        return 0;
+    }
+    for(searchPointer = head; searchPointer->getValue() != searchValue; searchPointer = searchPointer->getNext())
+    {
+        index++;
+        if(searchValue == searchPointer->getValue()
+           {
+               return index;
+           }
+    }
+    index = -1;
+    
+    return index;
 }
 
 
